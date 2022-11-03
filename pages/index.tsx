@@ -14,14 +14,13 @@ export const Home = () => {
   return (
     <>
      <NextSeo
+      title="Minimal blog"
+      description="Minimal blog design and built with tailwindcss and nextjs"
         openGraph={{
           type: 'website',
           url: domain,
           title: "Minimal blog",
           description: "minimal blog design and built with tailwindcss and nextjs",
-          authors: [
-            'https://officialrajdeepsingh.medium.com/',
-          ],
           images: [
             {
               url: `${domain}api/og`,
@@ -32,10 +31,6 @@ export const Home = () => {
           ],
         }}
       />
-      <Head>
-        <title>Minimal blog</title>
-      </Head>
-
 
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="mb-10 border-t border-b divide-y">
