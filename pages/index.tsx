@@ -5,7 +5,6 @@ import Link from "next/link";
 import data from "../Data/data";
 
 import slugify from "slugify";
-import Head from 'next/head';
 import { domain } from '../config';
 
 export const Home = () => {

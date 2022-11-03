@@ -2,16 +2,13 @@ import data from "../../Data/data";
 import { domain } from '../../config';
 import { NextSeo } from 'next-seo';
 import slugify from "slugify";
-import Head from 'next/head';
 
 const Post = ({ post, slug }) => {
 
   return (
     <>
-    <Head> 
-      <title>{post[0].title}</title>
-    </Head>
       <NextSeo
+      title={post[0].title}
         openGraph={{
           type: 'website',
           authorName: "Rajdeep Singh",
@@ -39,7 +36,7 @@ const Post = ({ post, slug }) => {
           <p className="leading-relaxed text-base mt-1"> {post[0].description}</p>
 
         <div className="flex flex-row">
-          <a type="button" role="button" title={post[0].title} href={`https://twitter.com/intent/tweet?url=${domain}${slugify(post[0].title, { replacement: '-', lower: true, trim: true })}`} className="text-indigo-500 inline-flex items-center  mt-2">Follows </a>
+          <span>share on :  <a type="button" role="button" title={post[0].title} href={`https://twitter.com/intent/tweet?url=${domain}${slugify(post[0].title, { replacement: '-', lower: true, trim: true })}`} className="text-indigo-500 inline-flex items-center  mt-2">twitter </a></span>
         </div>
 
           <div className="md:w-3/5 mt-4" dangerouslySetInnerHTML={{ __html: post[0].content }}>
