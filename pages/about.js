@@ -1,7 +1,5 @@
-import Head from 'next/head'
-import Image from 'next/image'
-
 import { NextSeo } from 'next-seo';
+import { domain } from '../config';
 
 
 const about = () => {
@@ -9,13 +7,15 @@ const about = () => {
   return( 
     <>
   <NextSeo
-      title={post[0].title}
+      title="Minimal blog -- About us"
+      description="Minimal blog design and built with tailwindcss and nextjs"
+        
         openGraph={{
           type: 'website',
           authorName: "Rajdeep Singh",
-          url: `${domain}${slug}`,
-          title: post[0].title,
-          description: post[0].description,
+          url: domain,
+          title:"Minimal blog -- About us",
+          description:"Minimal blog design and built with tailwindcss and nextjs",
           authors: [
             'https://officialrajdeepsingh.medium.com/',
           ],
@@ -24,7 +24,7 @@ const about = () => {
               url: `${domain}api/og`,
               width: 1200,
               height: 600,
-              alt: post[0].title,
+              alt: "Minimal blog",
             },
           ],
         }}
