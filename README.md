@@ -1,27 +1,21 @@
-# Next.js + Tailwind CSS Example
+# OGImage example
+OGImage static blog project is a real-life example of og-image-generation. you can play with code and deploy with easily. For the og-image-generation, I create an API on the following API/og.tsx` file.
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+I use `next-seo` npm package and tailwind CSS for web design.
 
-## Deploy your own
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## How to use it.
+1. clone the repo `git clone  https://github.com/officialrajdeepsingh/OGImage.git`.
+2. install all dependencies with `pnpm install`.
+3. run local dev server with `pnpm run dev` or `pnpm dev`.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
-## How to use
+### Config the domain
+```javascript
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+//  replace with your production domain
+export const domain="https://og-image-angpfhma2-officialrajdeepsingh.vercel.app/"
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+// local development
+export const domain="http://localhost:3000/"
 ```
-
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).

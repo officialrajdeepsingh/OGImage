@@ -20,7 +20,7 @@ const Post = ({ post, slug }) => {
           ],
           images: [
             {
-              url: `${domain}api/og`,
+              url: `${domain}api/og?title=${post[0].title}&BgColor=blue&color=black`,
               width: 1200,
               height: 600,
               alt: post[0].title,
