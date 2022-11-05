@@ -1,5 +1,5 @@
 # OGImage example
-OGImage static blog project is a real-life example of og-image-generation. you can play with code and deploy with easily. For the og-image-generation, I create an API on the following API/og.tsx` file.
+OGImage static blog project is a real-life example of og-image-generation. you can play with code and deploy with easily. For the og-image-generation, I create an API on the following `api/og.tsx` file.
 
 I use `next-seo` npm package and tailwind CSS for web design.
 
