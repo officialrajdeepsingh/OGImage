@@ -9,6 +9,11 @@ const Post = ({ post, slug }) => {
     <>
       <NextSeo
       title={post[0].title}
+      twitter={{
+        handle: '@Official_R_deep',
+        site: '@Official_R_deep',
+        cardType: 'summary_large_image',
+      }}
         openGraph={{
           type: 'website',
           authorName: "Rajdeep Singh",

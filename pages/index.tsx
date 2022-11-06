@@ -15,6 +15,11 @@ export const Home = () => {
      <NextSeo
       title="Minimal blog"
       description="Minimal blog design and built with tailwindcss and nextjs"
+      twitter={{
+        handle: '@Official_R_deep',
+        site: '@Official_R_deep',
+        cardType: 'summary_large_image',
+      }}
         openGraph={{
           type: 'website',
           url: domain,
@@ -28,6 +33,7 @@ export const Home = () => {
               alt: "minimal blog",
             },
           ],
+          
         }}
       />
 
